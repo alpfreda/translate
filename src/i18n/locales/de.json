@@ -1,0 +1,18 @@
+{
+  "pages": {
+    "signIn": "Anmelden",
+    "forgotPassword": "Passwort vergessen"
+  },
+  "common": {
+    "username": "NUTZERNAME",
+    "password": "PASSWORT",
+    "login": "Anmeldung",
+    "translate": "Translate"
+  },
+  "translation": {
+    "autoDetected": "AUTOMATISCH ERKENNT",
+    "source": "QUELLE",
+    "target": "ZIEL",
+    "numberOfWords": "Anzahl der Wörter:"
+  }
+}
