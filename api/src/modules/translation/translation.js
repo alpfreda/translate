@@ -1,7 +1,8 @@
 import express from "express";
 import got from "got";
 import { authMiddleware } from "../../middleware/auth.js";
-import languages from "./supportedLanguages.json";
+import languages from "./supportedLanguages.json" assert { type: "json" };
+
 
 const router = express.Router();
 

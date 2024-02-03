@@ -1,7 +1,7 @@
 # Vue auth with translate
 
-Hi!
-I used Axios for my REST API requests and Vuex for my global state management. To run the project, you need to include an .env file with the necessary configuration.
+### Hi!
+This GitHub project offers a simple example showcasing authentication in Vue.js and Vuex, employing the composition API. Additionally, the second page features a sample demonstrating server communication and translating mocks.
 
 ## **Requirements:**
 

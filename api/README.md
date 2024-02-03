@@ -5,7 +5,6 @@ This is a very light rest API for the Fictional Translation App.
 ## Setup
 
 ```bash
-  # Please use node version 14
   npm install # to install the dependencies
   npm start # to start the application, It defaults to PORT 9000
 ```

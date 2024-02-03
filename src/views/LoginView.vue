@@ -23,18 +23,18 @@
 </template>
 
 <script lang="ts" setup>
-  import { computed, watch } from 'vue'
-  import { useStore } from 'vuex'
-  import { useRouter } from 'vue-router'
-  import { Login } from '@/interfaces/login'
-  import { RequestStatus } from '@/enum/request-status'
-  import {
-    ACTION_AUTH_LOGIN,
-    GETTER_AUTH_ERROR,
-    GETTER_AUTH_STATUS
-  } from '@/store/types'
   import LoginForm from '@/components/login/LoginForm.vue'
-  import Message from '@/components/ui/Message.vue'
+import Message from '@/components/ui/Message.vue'
+import { RequestStatus } from '@/enum/request-status'
+import { Login } from '@/interfaces/login'
+import {
+ACTION_AUTH_LOGIN,
+GETTER_AUTH_ERROR,
+GETTER_AUTH_STATUS
+} from '@/store/types'
+import { computed, watch } from 'vue'
+import { useRouter } from 'vue-router'
+import { useStore } from 'vuex'
 
   const store = useStore()
   const router = useRouter()

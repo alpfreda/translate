@@ -1,11 +1,12 @@
-import http from "http";
-import express from "express";
-import cors from "cors";
-import compression from "compression";
-import morgan from "morgan";
 import bodyParser from "body-parser";
-import translationRoutes from "./modules/translation/translation.js";
+import compression from "compression";
+import cors from "cors";
+import express from "express";
+import http from "http";
+import morgan from "morgan";
+import serverless from "serverless-http";
 import authRoutes from "./modules/auth/index.js";
+import translationRoutes from "./modules/translation/translation.js";
 
 const app = express();
 
@@ -27,5 +28,7 @@ setImmediate(() => {
     console.log("Express server listening on %s", port);
   });
 });
+
+export const handler = serverless(app);
 
 export default app;

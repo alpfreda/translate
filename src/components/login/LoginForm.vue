@@ -25,18 +25,21 @@
     >
       {{ $t('common.login') }}
     </Button>
+    <div class="hint">
+      <div>password: <span>password</span></div>
+    </div>
   </form>
 </template>
 <script lang="ts" setup>
-  import { Login } from '@/interfaces/login'
-  import Button from '@/components/ui/Button.vue'
-  import { ref, computed } from 'vue'
-  import { RequestStatus } from '@/enum/request-status'
+  import Button from '@/components/ui/Button.vue';
+import { RequestStatus } from '@/enum/request-status';
+import { Login } from '@/interfaces/login';
+import { computed, ref } from 'vue';
 
   interface Props {
     status: RequestStatus
   }
-  const form = ref<Login>({ username: '', password: '' })
+  const form = ref<Login>({ username: 'admin', password: '' })
   const emits = defineEmits(['submitLogin'])
 
   const props = defineProps<Props>()
@@ -61,6 +64,15 @@
 
     .btn {
       margin-top: 3rem;
+    }
+
+    .hint {
+      padding: 1rem 0;
+      font-size: .9rem;
+    }
+
+    .hint span {
+      color: #ffeb3b
     }
   }
 </style>
